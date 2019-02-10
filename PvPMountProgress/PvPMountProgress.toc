@@ -1,0 +1,9 @@
+## Interface: 80100
+## Title: PvP Mount Progress
+## Author: Jone
+## Version: 1.0.0
+## Dependencies: Blizzard_PVPUI
+## LoadOnDemand: 1
+## LoadWith: Blizzard_PVPUI
+
+PvPMountProgress.lua
