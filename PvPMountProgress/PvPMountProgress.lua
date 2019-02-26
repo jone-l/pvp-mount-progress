@@ -1,20 +1,13 @@
-local BFA_START_SEASON = 26;
-local SEASON_REWARD_ACHIEVEMENTS = {
-	[BFA_START_SEASON] = {
-		[PLAYER_FACTION_GROUP[0]] = 13136,
-		[PLAYER_FACTION_GROUP[1]] = 13137,
-	},
-	[BFA_START_SEASON + 1] = {
-		[PLAYER_FACTION_GROUP[0]] = 13227,
-		[PLAYER_FACTION_GROUP[1]] = 13228,
-	},
-};
-
-local seasonAchievements = SEASON_REWARD_ACHIEVEMENTS[GetCurrentArenaSeason()];
-local achievementID = seasonAchievements and seasonAchievements[UnitFactionGroup("player")];
-
 hooksecurefunc(PVPQueueFrame.HonorInset.RatedPanel.SeasonRewardFrame, "UpdateTooltip", function(self)
 	
+	local achievementID = self:GetAchievementID();
+	if not achievementID then
+		return;
+	end
+	if GetAchievementNumCriteria(achievementID) == 0 then
+		return;
+	end
+		
 	EmbeddedItemTooltip:SetOwner(self, "ANCHOR_RIGHT");
 	GameTooltip_SetTitle(EmbeddedItemTooltip, PVP_SEASON_REWARD);
 
