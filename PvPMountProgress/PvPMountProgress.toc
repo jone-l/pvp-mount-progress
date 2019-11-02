@@ -1,7 +1,7 @@
-## Interface: 80200
+## Interface: 80205
 ## Title: PvP Mount Progress
 ## Author: Jone
-## Version: 1.0.2
+## Version: 1.0.3
 ## Dependencies: Blizzard_PVPUI
 ## LoadOnDemand: 1
 ## LoadWith: Blizzard_PVPUI
