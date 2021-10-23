@@ -1,7 +1,7 @@
-## Interface: 90002
+## Interface: 90100
 ## Title: PvP Mount Progress
 ## Author: Jone
-## Version: 1.0.4
+## Version: 1.0.5
 ## Dependencies: Blizzard_PVPUI
 ## LoadOnDemand: 1
 ## LoadWith: Blizzard_PVPUI
